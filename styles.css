@@ -79,7 +79,7 @@ a {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-end;
-  gap: 0 8px;
+  gap: 12px 13px;
   width: 300px;
   flex-shrink: 0;
   font-family: var(--display);
