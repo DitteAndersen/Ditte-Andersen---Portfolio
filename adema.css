@@ -1,0 +1,140 @@
+.adema-page {
+  background: #080808;
+  color: #fff;
+}
+
+.adema-page main,
+.adema-page .punto-content {
+  padding-bottom: 0;
+}
+
+.adema-page main {
+  padding-bottom: 345px;
+}
+
+.adema-page .work-header {
+  border-color: #fff;
+}
+
+.adema-showcase {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  gap: 55px;
+  width: 1176px;
+  margin: 119px auto 0;
+}
+
+.adema-column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.adema-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.adema-subscription {
+  margin-top: 76px;
+}
+
+.adema-about {
+  margin-top: 82px;
+}
+
+/* TABLET */
+
+@media (min-width: 621px) and (max-width: 1024px) {
+  .adema-page main {
+    padding-bottom: 128px;
+  }
+
+  .adema-showcase {
+    display: flex;
+    width: min(683px, calc(100% - 60px));
+    margin: 125px auto 0;
+    flex-direction: column;
+    gap: 91px;
+  }
+
+  .adema-column {
+    display: contents;
+  }
+
+  .adema-image {
+    width: 615px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .adema-home {
+    order: 1;
+    margin-left: 0;
+  }
+
+  .adema-product {
+    order: 2;
+    margin-top: 0;
+  }
+
+  .adema-about {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .adema-subscription {
+    order: 4;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .adema-page main {
+    padding-bottom: 79px;
+  }
+
+  .adema-showcase {
+    display: flex;
+    width: min(319px, calc(100% - 56px));
+    margin: 93px auto 0;
+    flex-direction: column;
+    gap: 41px;
+  }
+
+  .adema-column {
+    display: contents;
+  }
+
+  .adema-image {
+    width: 100%;
+  }
+
+  .adema-home {
+    order: 1;
+  }
+
+  .adema-product {
+    order: 2;
+    margin-top: 0;
+  }
+
+  .adema-about {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .adema-subscription {
+    order: 4;
+    margin-top: 0;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1440px) {
+  main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

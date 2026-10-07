@@ -1,0 +1,249 @@
+.cafe-esso-page {
+  background: #080808;
+  color: #fff;
+}
+
+.cafe-esso-page main {
+  min-height: 3079px;
+  padding-bottom: 0;
+}
+
+.cafe-esso-page .punto-content {
+  padding-bottom: 0;
+}
+
+.cafe-esso-page .work-header {
+  border-color: #fff;
+}
+
+/* INTRO — SAME AS PUNTO */
+
+.cafe-esso-page .punto-intro {
+  width: 1171px;
+  max-width: calc(100% - 60px);
+  margin: 0 auto;
+  padding-top: 59px;
+}
+
+.cafe-esso-page .punto-intro h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.cafe-esso-page .punto-intro p {
+  max-width: 608px;
+  margin: 0 0 12px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.cafe-esso-page .punto-intro p + p {
+  margin-top: 0;
+}
+
+/* SHOWCASE */
+
+.cafe-showcase {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  gap: 51px;
+  width: 1171px;
+  margin: 112px auto 0;
+}
+
+.cafe-column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.cafe-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cafe-gallery {
+  margin-top: 79px;
+}
+
+.cafe-event-calendar {
+  margin-top: 80px;
+}
+
+.cafe-order {
+  margin-top: 0;
+}
+
+.cafe-about {
+  margin-top: 82px;
+}
+
+.cafe-menu {
+  margin-top: 81px;
+}
+
+/* TABLET */
+
+@media (min-width: 621px) and (max-width: 1024px) {
+  .cafe-esso-page main {
+    min-height: 5268px;
+  }
+
+  .cafe-esso-page .punto-intro {
+    width: min(683px, calc(100% - 60px));
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 59px;
+  }
+
+  .cafe-esso-page .punto-intro h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .cafe-esso-page .punto-intro p {
+    max-width: 608px;
+    margin: 0 0 12px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .cafe-esso-page .punto-intro p + p {
+    margin-top: 0;
+  }
+
+  .cafe-showcase {
+    display: flex;
+    width: min(683px, calc(100% - 60px));
+    margin: 125px auto 0;
+    flex-direction: column;
+    gap: 91px;
+  }
+
+  .cafe-column {
+    display: contents;
+  }
+
+  .cafe-showcase img {
+    width: 615px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .cafe-home {
+    order: 1;
+  }
+
+  .cafe-order {
+    order: 2;
+  }
+
+  .cafe-event-calendar {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .cafe-about {
+    order: 4;
+    margin-top: 0;
+  }
+
+  .cafe-gallery {
+    order: 5;
+    margin-top: 0;
+  }
+
+  .cafe-menu {
+    order: 6;
+    margin-top: 0;
+  }
+}
+/* MOBILE */
+
+@media (max-width: 620px) {
+  .cafe-esso-page main {
+    min-height: 3521px;
+  }
+
+  .cafe-esso-page .punto-intro {
+    width: min(322px, calc(100% - 46px));
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 86px;
+  }
+
+  .cafe-esso-page .punto-intro h1 {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+
+  .cafe-esso-page .punto-intro p {
+    max-width: none;
+    margin: 0 0 12px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .cafe-esso-page .punto-intro p + p {
+    margin-top: 0;
+  }
+
+  .cafe-showcase {
+    display: flex;
+    width: min(322px, calc(100% - 46px));
+    margin: 153px auto 0;
+    flex-direction: column;
+    gap: 53px;
+  }
+
+  .cafe-column {
+    display: contents;
+  }
+
+  .cafe-showcase img {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .cafe-home {
+    order: 1;
+  }
+
+  .cafe-order {
+    order: 2;
+  }
+
+  .cafe-event-calendar {
+    order: 3;
+  }
+
+  .cafe-about {
+    order: 4;
+  }
+
+  .cafe-gallery {
+    order: 5;
+  }
+
+  .cafe-menu {
+    order: 6;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1440px) {
+  main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

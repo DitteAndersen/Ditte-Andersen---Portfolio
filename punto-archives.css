@@ -1,0 +1,366 @@
+.punto-page {
+  background: #080808;
+  color: #fff;
+}
+
+.punto-page main {
+  padding-bottom: 300px;
+}
+
+.punto-page .work-header {
+  border-color: #fff;
+}
+
+.punto-content {
+  padding: 0 0 90px;
+  background: #080808;
+  color: #fff;
+}
+
+/* INTRO */
+
+.punto-intro {
+  width: 1171px;
+  max-width: calc(100% - 60px);
+  margin: 0 auto;
+  padding-top: 59px;
+}
+
+.punto-intro h1,
+.photo-section h2 {
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.punto-intro h1 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.punto-intro p {
+  max-width: 608px;
+  margin: 0 0 12px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* WEBSITE SHOWCASE */
+
+.website-showcase {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  gap: 51px;
+  width: 1171px;
+  margin: 112px auto 0;
+}
+
+.website-column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.website-column img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mockup-subscription {
+  margin-top: 75px;
+}
+
+.mockup-lookbook {
+  margin-top: 75px;
+}
+
+.mockup-product {
+  margin-top: 70px;
+}
+
+.mockup-shop {
+  margin-top: 67px;
+}
+
+.mockup-about {
+  margin-top: 70px;
+}
+
+/* PHOTO SECTION */
+
+.photo-section {
+  width: min(1165px, calc(100% - 52px));
+  margin: 100px auto 0;
+}
+
+.photo-section h2 {
+  margin-bottom: 60px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: start;
+  gap: 36px;
+}
+
+.photo-gallery img,
+.photo-gallery video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-lead {
+  grid-column: 1 / -1;
+  width: 100%;
+  aspect-ratio: 1166 / 607;
+  object-fit: cover;
+}
+
+.photo-wide {
+  grid-column: span 3;
+  aspect-ratio: 3 / 2;
+}
+
+.photo-portrait {
+  grid-column: span 2;
+  aspect-ratio: 2 / 3;
+}
+
+/* TABLET */
+
+@media (min-width: 621px) and (max-width: 1024px) {
+  .punto-intro {
+    width: min(683px, calc(100% - 60px));
+    margin: 0 auto;
+    padding-top: 59px;
+  }
+
+  .website-showcase {
+    grid-template-columns: repeat(2, minmax(0, 322px));
+    gap: 39px;
+    width: min(683px, calc(100% - 60px));
+    margin: 130px auto 0;
+    padding: 0;
+  }
+
+  .mockup-subscription {
+    margin-top: 48px;
+  }
+
+  .mockup-lookbook {
+    margin-top: 48px;
+  }
+
+  .mockup-product {
+    margin-top: 45px;
+  }
+
+  .mockup-shop {
+    margin-top: 44px;
+  }
+
+  .mockup-about {
+    margin-top: 45px;
+  }
+
+  .photo-section {
+    width: min(681px, calc(100% - 60px));
+    margin-top: 88px;
+  }
+
+  .punto-page main {
+    padding-bottom: 240px;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .photo-gallery .photo-lead {
+    grid-column: 1 / -1;
+    aspect-ratio: 1166 / 607;
+  }
+
+  .photo-wide {
+    grid-column: span 3;
+    aspect-ratio: 3 / 2;
+  }
+
+  .photo-portrait {
+    grid-column: span 2;
+    aspect-ratio: 2 / 3;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+  .punto-content {
+    padding-bottom: 48px;
+  }
+
+  .punto-intro {
+    width: min(322px, calc(100% - 46px));
+    margin: 0 auto;
+    padding-top: 86px;
+  }
+
+  .punto-intro h1,
+  .photo-section h2 {
+    font-size: 24px;
+  }
+
+  .punto-intro h1 {
+    margin-bottom: 35px;
+  }
+
+  .punto-intro p {
+    max-width: none;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .website-showcase {
+    display: flex;
+    width: min(322px, calc(100% - 46px));
+    margin: 133px auto 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .website-column {
+    display: contents;
+  }
+
+  .website-column img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .mockup-home {
+    order: 1;
+  }
+
+  .mockup-campaign {
+    order: 2;
+  }
+
+  .mockup-subscription {
+    order: 3;
+  }
+
+  .mockup-product {
+    order: 4;
+  }
+
+  .mockup-shop {
+    order: 5;
+  }
+
+  .mockup-lookbook {
+    order: 6;
+  }
+
+  .mockup-about {
+    order: 7;
+  }
+
+  .photo-section {
+    width: min(322px, calc(100% - 46px));
+    margin-top: 74px;
+  }
+
+  .photo-section h2 {
+    height: 64px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
+  .photo-gallery {
+    grid-template-columns: repeat(2, 145px);
+    gap: 23px 32px;
+    width: 322px;
+    margin: 0 auto;
+  }
+
+  .punto-page main {
+    padding-bottom: 69px;
+  }
+
+  .photo-gallery img,
+  .photo-gallery video {
+    grid-column: span 1;
+    aspect-ratio: 2 / 3;
+  }
+
+  .photo-gallery .photo-lead,
+  .photo-gallery .photo-tilted,
+  .photo-gallery .photo-cyclist {
+    grid-column: 1 / -1;
+    aspect-ratio: 322 / 215;
+  }
+
+  .photo-lead {
+    order: 1;
+  }
+
+  .photo-stairs {
+    order: 2;
+  }
+
+  .photo-pose {
+    order: 3;
+  }
+
+  .photo-tilted {
+    order: 4;
+  }
+
+  .photo-seated {
+    order: 5;
+  }
+
+  .photo-back {
+    order: 6;
+  }
+
+  .photo-cyclist {
+    order: 7;
+  }
+
+  .photo-outdoor {
+    order: 8;
+  }
+
+  .photo-coffee {
+    order: 9;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .punto-page html {
+    scroll-behavior: auto;
+  }
+}
+/* LARGE SCREENS */
+@media (min-width: 1440px) {
+  main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

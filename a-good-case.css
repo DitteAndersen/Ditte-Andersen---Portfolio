@@ -1,0 +1,198 @@
+.good-case-page {
+  background: #080808;
+  color: #fff;
+}
+
+.good-case-page main {
+  min-height: 2325px;
+  padding-bottom: 0;
+}
+
+.good-case-page .punto-content {
+  padding-bottom: 0;
+}
+
+.good-case-page .work-header {
+  border-color: #fff;
+}
+
+/* INTRO — SAME AS PUNTO */
+
+.good-case-page .punto-intro {
+  width: 1171px;
+  max-width: calc(100% - 60px);
+  margin: 0 auto;
+  padding-top: 59px;
+}
+
+.good-case-page .punto-intro h1 {
+  margin: 40px 0 40px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.good-case-page .punto-intro p {
+  max-width: 608px;
+  margin: 0 0 12px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* SHOWCASE */
+
+.good-case-showcase {
+  display: grid;
+  grid-template-columns: 560px 560px;
+  gap: 51px;
+  width: 1171px;
+  margin: 86px auto 0;
+}
+
+.good-case-column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.good-case-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.good-case-subscription {
+  margin-top: 78px;
+}
+
+.good-case-about {
+  margin-top: 85px;
+}
+
+/* TABLET */
+
+@media (min-width: 621px) and (max-width: 1024px) {
+  .good-case-page main {
+    min-height: 4248px;
+  }
+
+  .good-case-page .punto-intro {
+    width: min(683px, calc(100% - 60px));
+    margin: 0 auto;
+    padding-top: 59px;
+  }
+
+  .good-case-page .punto-intro p {
+    max-width: 608px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .good-case-showcase {
+    display: flex;
+    width: min(683px, calc(100% - 60px));
+    margin: 125px auto 0;
+    flex-direction: column;
+    gap: 91px;
+  }
+
+  .good-case-column {
+    display: contents;
+  }
+
+  .good-case-showcase img {
+    width: 615px;
+    max-width: 100%;
+  }
+
+  .good-case-home {
+    order: 1;
+  }
+
+  .good-case-product {
+    order: 2;
+  }
+
+  .good-case-subscription {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .good-case-about {
+    order: 4;
+    margin-top: 0;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+  .good-case-page main {
+    min-height: 2670px;
+  }
+
+  .good-case-page .punto-intro {
+    width: min(322px, calc(100% - 46px));
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 86px;
+  }
+
+  .good-case-page .punto-intro h1 {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+
+  .good-case-page .punto-intro p {
+    max-width: none;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .good-case-showcase {
+    display: flex;
+    width: min(322px, calc(100% - 46px));
+    margin: 172px auto 0;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .good-case-column {
+    display: contents;
+  }
+
+  .good-case-showcase img {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .good-case-home {
+    order: 1;
+  }
+
+  .good-case-product {
+    order: 2;
+  }
+
+  .good-case-subscription {
+    order: 3;
+  }
+
+  .good-case-about {
+    order: 4;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1440px) {
+  main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
