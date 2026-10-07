@@ -36,15 +36,20 @@ a {
 .work-nav {
   display: flex;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 12px 13px;
   padding: 28px 3vw 0;
 }
 
-.work-nav a {
+.work-nav span {
   font-size: 48px;
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: -2.5px;
+}
+
+.work-nav a {
+  font: inherit;
+  letter-spacing: inherit;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
